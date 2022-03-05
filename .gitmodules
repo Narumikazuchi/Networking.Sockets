@@ -1,0 +1,9 @@
+[submodule "submodules/Collections"]
+	path = submodules/Collections
+	url = https://github.com/Narumikazuchi/Collections
+[submodule "submodules/Networking"]
+	path = submodules/Networking
+	url = https://github.com/Narumikazuchi/Networking
+[submodule "submodules/Serialization"]
+	path = submodules/Serialization
+	url = https://github.com/Narumikazuchi/Serialization_Bytes
