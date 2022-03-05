@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32210.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narumikazuchi.Networking.Sockets", "Narumikazuchi.Networking.Sockets\Narumikazuchi.Networking.Sockets.csproj", "{B406B253-9659-4B28-8D34-DCCF02369177}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{288C3733-6C96-4368-AD1F-12167EAFC5C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Collections", "Collections", "{41827B73-DB28-4285-B6BB-069D8A19CC69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narumikazuchi.Collections", "submodules\Collections\Narumikazuchi.Collections\Narumikazuchi.Collections.csproj", "{C915F85E-1B8B-4221-9FFE-D488A67D4DB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narumikazuchi.Collections.Abstract", "submodules\Collections\submodules\Abstract\Narumikazuchi.Collections.Abstract\Narumikazuchi.Collections.Abstract.csproj", "{3E3C7A33-D49C-43E1-B9CB-98A31A8D2BCC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narumikazuchi", "submodules\Collections\submodules\Abstract\submodules\Common\Narumikazuchi\Narumikazuchi.csproj", "{BF06C3C2-B241-402D-B59B-4BDA9FF15687}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Networking", "Networking", "{399E23AD-965F-4BA7-A972-6369EBC9A085}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narumikazuchi.Networking", "submodules\Networking\Narumikazuchi.Networking\Narumikazuchi.Networking.csproj", "{784AD0D0-BDA4-479F-AA1A-BFC359C6B6F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narumikazuchi", "submodules\Networking\submodules\Common\Narumikazuchi\Narumikazuchi.csproj", "{AA9DEDB8-11CF-4854-A43E-D7A2CE5D09F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{B4EAB2FC-CB12-486C-A28C-306D7ED641CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narumikazuchi.Serialization.Bytes", "submodules\Serialization\Narumikazuchi.Serialization.Bytes\Narumikazuchi.Serialization.Bytes.csproj", "{3DB807E7-138B-4333-9C43-F7E31A5325FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narumikazuchi.Serialization", "submodules\Serialization\submodules\Serialization\Narumikazuchi.Serialization\Narumikazuchi.Serialization.csproj", "{C3A23D7F-D143-4B84-8634-7B53A8EF89EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narumikazuchi", "submodules\Serialization\submodules\Serialization\submodules\Common\Narumikazuchi\Narumikazuchi.csproj", "{C265CB56-C894-4F8C-B34C-E984E259A069}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B406B253-9659-4B28-8D34-DCCF02369177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B406B253-9659-4B28-8D34-DCCF02369177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B406B253-9659-4B28-8D34-DCCF02369177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B406B253-9659-4B28-8D34-DCCF02369177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C915F85E-1B8B-4221-9FFE-D488A67D4DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C915F85E-1B8B-4221-9FFE-D488A67D4DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C915F85E-1B8B-4221-9FFE-D488A67D4DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C915F85E-1B8B-4221-9FFE-D488A67D4DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E3C7A33-D49C-43E1-B9CB-98A31A8D2BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3C7A33-D49C-43E1-B9CB-98A31A8D2BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3C7A33-D49C-43E1-B9CB-98A31A8D2BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3C7A33-D49C-43E1-B9CB-98A31A8D2BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF06C3C2-B241-402D-B59B-4BDA9FF15687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF06C3C2-B241-402D-B59B-4BDA9FF15687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF06C3C2-B241-402D-B59B-4BDA9FF15687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF06C3C2-B241-402D-B59B-4BDA9FF15687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784AD0D0-BDA4-479F-AA1A-BFC359C6B6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784AD0D0-BDA4-479F-AA1A-BFC359C6B6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784AD0D0-BDA4-479F-AA1A-BFC359C6B6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784AD0D0-BDA4-479F-AA1A-BFC359C6B6F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9DEDB8-11CF-4854-A43E-D7A2CE5D09F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9DEDB8-11CF-4854-A43E-D7A2CE5D09F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9DEDB8-11CF-4854-A43E-D7A2CE5D09F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9DEDB8-11CF-4854-A43E-D7A2CE5D09F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB807E7-138B-4333-9C43-F7E31A5325FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB807E7-138B-4333-9C43-F7E31A5325FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB807E7-138B-4333-9C43-F7E31A5325FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB807E7-138B-4333-9C43-F7E31A5325FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A23D7F-D143-4B84-8634-7B53A8EF89EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A23D7F-D143-4B84-8634-7B53A8EF89EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A23D7F-D143-4B84-8634-7B53A8EF89EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A23D7F-D143-4B84-8634-7B53A8EF89EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C265CB56-C894-4F8C-B34C-E984E259A069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C265CB56-C894-4F8C-B34C-E984E259A069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C265CB56-C894-4F8C-B34C-E984E259A069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C265CB56-C894-4F8C-B34C-E984E259A069}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41827B73-DB28-4285-B6BB-069D8A19CC69} = {288C3733-6C96-4368-AD1F-12167EAFC5C6}
+		{C915F85E-1B8B-4221-9FFE-D488A67D4DB7} = {41827B73-DB28-4285-B6BB-069D8A19CC69}
+		{3E3C7A33-D49C-43E1-B9CB-98A31A8D2BCC} = {41827B73-DB28-4285-B6BB-069D8A19CC69}
+		{BF06C3C2-B241-402D-B59B-4BDA9FF15687} = {41827B73-DB28-4285-B6BB-069D8A19CC69}
+		{399E23AD-965F-4BA7-A972-6369EBC9A085} = {288C3733-6C96-4368-AD1F-12167EAFC5C6}
+		{784AD0D0-BDA4-479F-AA1A-BFC359C6B6F7} = {399E23AD-965F-4BA7-A972-6369EBC9A085}
+		{AA9DEDB8-11CF-4854-A43E-D7A2CE5D09F7} = {399E23AD-965F-4BA7-A972-6369EBC9A085}
+		{B4EAB2FC-CB12-486C-A28C-306D7ED641CD} = {288C3733-6C96-4368-AD1F-12167EAFC5C6}
+		{3DB807E7-138B-4333-9C43-F7E31A5325FC} = {B4EAB2FC-CB12-486C-A28C-306D7ED641CD}
+		{C3A23D7F-D143-4B84-8634-7B53A8EF89EC} = {B4EAB2FC-CB12-486C-A28C-306D7ED641CD}
+		{C265CB56-C894-4F8C-B34C-E984E259A069} = {B4EAB2FC-CB12-486C-A28C-306D7ED641CD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3AF3E60-1309-4CB5-9433-873CC974221D}
+	EndGlobalSection
+EndGlobal

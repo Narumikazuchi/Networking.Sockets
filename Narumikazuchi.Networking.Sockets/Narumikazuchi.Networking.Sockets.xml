@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Narumikazuchi.Networking.Sockets</name>
+    </assembly>
+    <members>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientUsingByteArrays.WithDataProcessor(Narumikazuchi.Networking.IClientDataProcessor{System.Byte[]})">
+            <summary>
+            Designates the specified <see cref="T:Narumikazuchi.Networking.IClientDataProcessor`1"/> to the client.
+            </summary>
+            <param name="processor">The data processor that will handle incoming messages.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientUsingByteArraysFinalizer.Create">
+            <summary>
+            Finalizes the configuration and returns the configured <see cref="T:Narumikazuchi.Networking.IClient`1"/>.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientUsingByteSerialization`1.WithDataProcessor(Narumikazuchi.Networking.IClientDataProcessor{`0})">
+            <summary>
+            Designates the specified <see cref="T:Narumikazuchi.Networking.IClientDataProcessor`1"/> to the client.
+            </summary>
+            <param name="processor">The data processor that will handle incoming messages.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientUsingByteSerialization`1.WithSerializationStrategies(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Type,Narumikazuchi.Serialization.ISerializationDeserializationStrategy{System.Byte[]}}})">
+            <summary>
+            Adds the specified <see cref="T:Narumikazuchi.Serialization.ISerializationStrategy`1"/> objects to the standard strategies that are used by the internal <see cref="T:Narumikazuchi.Serialization.Bytes.IByteSerializerDeserializer`1"/>.
+            </summary>
+            <param name="strategies">The strategies to append to the internal serializer.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientUsingByteSerializationFinalizer`1.Create">
+            <summary>
+            Finalizes the configuration and returns the configured <see cref="T:Narumikazuchi.Networking.IClient`1"/>.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientUsingByteSerializationWithoutProcessor`1.WithDataProcessor(Narumikazuchi.Networking.IClientDataProcessor{`0})">
+            <summary>
+            Designates the specified <see cref="T:Narumikazuchi.Networking.IClientDataProcessor`1"/> to the client.
+            </summary>
+            <param name="processor">The data processor that will handle incoming messages.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientUsingByteSerializationWithoutStrategies`1.WithSerializationStrategies(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Type,Narumikazuchi.Serialization.ISerializationDeserializationStrategy{System.Byte[]}}})">
+            <summary>
+            Adds the specified <see cref="T:Narumikazuchi.Serialization.ISerializationStrategy`1"/> objects to the standard strategies that are used by the internal <see cref="T:Narumikazuchi.Serialization.Bytes.IByteSerializerDeserializer`1"/>.
+            </summary>
+            <param name="strategies">The strategies to append to the internal serializer.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientWithBufferSize.WithPort(System.Int32@)">
+            <summary>
+            Designates the specified port for the communication with the server.
+            </summary>
+            <param name="port">The port over which the client communicates with the server.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientWithoutSerialization.UsingByteArrays">
+            <summary>
+            Setups the client to only handle raw data, that is <see cref="T:System.Byte"/>[] arrays.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientWithoutSerialization.UsingByteSerialization``1">
+            <summary>
+            Setups the client to handle a certain type <typeparamref name="TMessage"/> for messages.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IClientWithPort.WithBufferSize(System.Int32@)">
+            <summary>
+            Sets the size of the <see cref="T:System.Byte"/>[] buffer in which incoming raw messages are temporarily stored. 
+            </summary>
+            <param name="bufferSize">The size of the temporary buffer.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteArrays.WithDataProcessor(Narumikazuchi.Networking.IServerDataProcessor{System.Byte[]})">
+            <summary>
+            Designates the specified <see cref="T:Narumikazuchi.Networking.IServerDataProcessor`1"/> to the server.
+            </summary>
+            <param name="processor">The data processor that will handle incoming messages.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteArraysFinalizer.Create">
+            <summary>
+            Finalizes the configuration and returns the configured <see cref="T:Narumikazuchi.Networking.IServer`1"/>.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerialization`1.WithDataProcessor(Narumikazuchi.Networking.IServerDataProcessor{`0})">
+            <summary>
+            Designates the specified <see cref="T:Narumikazuchi.Networking.IServerDataProcessor`1"/> to the server.
+            </summary>
+            <param name="processor">The data processor that will handle incoming messages.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerialization`1.WithAcceptCondition(Narumikazuchi.Networking.ServerAcceptCondition{`0})">
+            <summary>
+            Sets a specific condition by which the server will decide whether to accept an incoming connection or not.
+            </summary>
+            <param name="acceptCondition">The condition for incoming connections.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerialization`1.WithSerializationStrategies(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Type,Narumikazuchi.Serialization.ISerializationDeserializationStrategy{System.Byte[]}}})">
+            <summary>
+            Adds the specified <see cref="T:Narumikazuchi.Serialization.ISerializationStrategy`1"/> objects to the standard strategies that are used by the internal <see cref="T:Narumikazuchi.Serialization.Bytes.IByteSerializerDeserializer`1"/>.
+            </summary>
+            <param name="strategies">The strategies to append to the internal serializer.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationFinalizer`1.Create">
+            <summary>
+            Finalizes the configuration and returns the configured <see cref="T:Narumikazuchi.Networking.IServer`1"/>.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationWithAcceptCondition`1.WithDataProcessor(Narumikazuchi.Networking.IServerDataProcessor{`0})">
+            <summary>
+            Designates the specified <see cref="T:Narumikazuchi.Networking.IServerDataProcessor`1"/> to the server.
+            </summary>
+            <param name="processor">The data processor that will handle incoming messages.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationWithAcceptCondition`1.WithSerializationStrategies(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Type,Narumikazuchi.Serialization.ISerializationDeserializationStrategy{System.Byte[]}}})">
+            <summary>
+            Adds the specified <see cref="T:Narumikazuchi.Serialization.ISerializationStrategy`1"/> objects to the standard strategies that are used by the internal <see cref="T:Narumikazuchi.Serialization.Bytes.IByteSerializerDeserializer`1"/>.
+            </summary>
+            <param name="strategies">The strategies to append to the internal serializer.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationWithDataProcessor`1.WithAcceptCondition(Narumikazuchi.Networking.ServerAcceptCondition{`0})">
+            <summary>
+            Sets a specific condition by which the server will decide whether to accept an incoming connection or not.
+            </summary>
+            <param name="acceptCondition">The condition for incoming connections.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationWithDataProcessor`1.WithSerializationStrategies(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Type,Narumikazuchi.Serialization.ISerializationDeserializationStrategy{System.Byte[]}}})">
+            <summary>
+            Adds the specified <see cref="T:Narumikazuchi.Serialization.ISerializationStrategy`1"/> objects to the standard strategies that are used by the internal <see cref="T:Narumikazuchi.Serialization.Bytes.IByteSerializerDeserializer`1"/>.
+            </summary>
+            <param name="strategies">The strategies to append to the internal serializer.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationWithoutAcceptCondition`1.WithAcceptCondition(Narumikazuchi.Networking.ServerAcceptCondition{`0})">
+            <summary>
+            Sets a specific condition by which the server will decide whether to accept an incoming connection or not.
+            </summary>
+            <param name="acceptCondition">The condition for incoming connections.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationWithoutDataProcessor`1.WithDataProcessor(Narumikazuchi.Networking.IServerDataProcessor{`0})">
+            <summary>
+            Designates the specified <see cref="T:Narumikazuchi.Networking.IServerDataProcessor`1"/> to the server.
+            </summary>
+            <param name="processor">The data processor that will handle incoming messages.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationWithoutStrategies`1.WithSerializationStrategies(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Type,Narumikazuchi.Serialization.ISerializationDeserializationStrategy{System.Byte[]}}})">
+            <summary>
+            Adds the specified <see cref="T:Narumikazuchi.Serialization.ISerializationStrategy`1"/> objects to the standard strategies that are used by the internal <see cref="T:Narumikazuchi.Serialization.Bytes.IByteSerializerDeserializer`1"/>.
+            </summary>
+            <param name="strategies">The strategies to append to the internal serializer.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationWithStrategies`1.WithAcceptCondition(Narumikazuchi.Networking.ServerAcceptCondition{`0})">
+            <summary>
+            Sets a specific condition by which the server will decide whether to accept an incoming connection or not.
+            </summary>
+            <param name="acceptCondition">The condition for incoming connections.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerUsingByteSerializationWithStrategies`1.WithDataProcessor(Narumikazuchi.Networking.IServerDataProcessor{`0})">
+            <summary>
+            Designates the specified <see cref="T:Narumikazuchi.Networking.IServerDataProcessor`1"/> to the server.
+            </summary>
+            <param name="processor">The data processor that will handle incoming messages.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerWithBufferSize.WithPort(System.Int32@)">
+            <summary>
+            Designates the specified port for the communication of clients with the server.
+            </summary>
+            <param name="port">The port over which the server communicates with clients.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerWithoutSerialization.UsingByteArrays">
+            <summary>
+            Setups the server to only handle raw data, that is <see cref="T:System.Byte"/>[] arrays.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerWithoutSerialization.UsingByteSerialization``1">
+            <summary>
+            Setups the server to handle a certain type <typeparamref name="TMessage"/> for messages.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.IServerWithPort.WithBufferSize(System.Int32@)">
+            <summary>
+            Sets the size of the <see cref="T:System.Byte"/>[] buffer in which incoming raw messages are temporarily stored. 
+            </summary>
+            <param name="bufferSize">The size of the temporary buffer.</param>
+        </member>
+        <member name="T:Narumikazuchi.Networking.Sockets.ClientDataProcessor">
+            <summary>
+            Provides the blueprint for data processing of an <see cref="T:Narumikazuchi.Networking.IClient`1"/>.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ClientDataProcessor.#ctor(Narumikazuchi.Networking.IClient{System.Byte[]})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.ClientDataProcessor"/> class.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ClientDataProcessor.ProcessReceivedData(System.Byte[])">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ClientDataProcessor.Disconnect">
+            <summary>
+            Disconnects the <see cref="P:Narumikazuchi.Networking.Sockets.ClientDataProcessor.Client"/> from the <see cref="T:Narumikazuchi.Networking.IServer`1"/>.
+            </summary>
+        </member>
+        <member name="P:Narumikazuchi.Networking.Sockets.ClientDataProcessor.Client">
+            <summary>
+            Gets or sets the <see cref="P:Narumikazuchi.Networking.Sockets.ClientDataProcessor.Client"/> associated with this processor.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="T:Narumikazuchi.Networking.Sockets.CreateSocketClient">
+            <summary>
+            Creates a new <see cref="T:Narumikazuchi.Networking.IClient`1"/> which uses a <see cref="T:System.Net.Sockets.Socket"/> for communication.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.CreateSocketClient.WithPort(System.Int32@)">
+            <summary>
+            Designates the specified port for the communication with the server.
+            </summary>
+            <param name="port">The port over which the client communicates with the server.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.CreateSocketClient.WithBufferSize(System.Int32@)">
+            <summary>
+            Sets the size of the <see cref="T:System.Byte"/>[] buffer in which incoming raw messages are temporarily stored. 
+            </summary>
+            <param name="bufferSize">The size of the temporary buffer.</param>
+        </member>
+        <member name="T:Narumikazuchi.Networking.Sockets.CreateSocketServer">
+            <summary>
+            Creates a new <see cref="T:Narumikazuchi.Networking.IServer`1"/> that utilizes <see cref="T:System.Net.Sockets.Socket"/>s for communication.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.CreateSocketServer.WithPort(System.Int32@)">
+            <summary>
+            Designates the specified port for the communication of clients with the server.
+            </summary>
+            <param name="port">The port over which the server communicates with clients.</param>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.CreateSocketServer.WithBufferSize(System.Int32@)">
+            <summary>
+            Sets the size of the <see cref="T:System.Byte"/>[] buffer in which incoming raw messages are temporarily stored. 
+            </summary>
+            <param name="bufferSize">The size of the temporary buffer.</param>
+        </member>
+        <member name="T:Narumikazuchi.Networking.Sockets.MaximumAttemptsExceededException">
+            <summary>
+            Represents errors which happen when connecting two endpoints.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.MaximumAttemptsExceededException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.MaximumAttemptsExceededException"/> class.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.MaximumAttemptsExceededException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.MaximumAttemptsExceededException"/> class.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.MaximumAttemptsExceededException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.MaximumAttemptsExceededException"/> class.
+            </summary>
+        </member>
+        <member name="T:Narumikazuchi.Networking.Sockets.NotConnectedException">
+            <summary>
+            Represents the error which occurs when two endpoints are not connected.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.NotConnectedException.#ctor(System.Net.Sockets.Socket)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.NotConnectedException"/> class.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.NotConnectedException.#ctor(System.Net.Sockets.Socket,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.NotConnectedException"/> class.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.NotConnectedException.#ctor(System.Net.Sockets.Socket,System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.NotConnectedException"/> class.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="P:Narumikazuchi.Networking.Sockets.NotConnectedException.Endpoint">
+            <summary>
+            The socket which caused the exception.
+            </summary>
+        </member>
+        <member name="T:Narumikazuchi.Networking.Sockets.ClientDataProcessor`1">
+            <summary>
+            Provides the blueprint for data processing of an <see cref="T:Narumikazuchi.Networking.IClient`1"/>.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ClientDataProcessor`1.#ctor(Narumikazuchi.Networking.IClient{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.ClientDataProcessor`1"/> class.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ClientDataProcessor`1.ProcessReceivedData(`0)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ClientDataProcessor`1.Disconnect">
+            <summary>
+            Disconnects the <see cref="T:Narumikazuchi.Networking.IClient`1"/> from the <see cref="T:Narumikazuchi.Networking.IServer`1"/>.
+            </summary>
+        </member>
+        <member name="P:Narumikazuchi.Networking.Sockets.ClientDataProcessor`1.Client">
+            <summary>
+            Gets or sets the <see cref="T:Narumikazuchi.Networking.IClient`1"/> associated with this processor.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="T:Narumikazuchi.Networking.Sockets.ServerDataProcessor`1">
+            <summary>
+            Provides the blueprint for data processing of an <see cref="T:Narumikazuchi.Networking.IServer`1"/>.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ServerDataProcessor`1.#ctor(Narumikazuchi.Networking.IServer{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.ServerDataProcessor`1"/> class.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ServerDataProcessor`1.ProcessReceivedData(`0,System.Guid@)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ServerDataProcessor`1.DisconnectClient(System.Guid@)">
+            <summary>
+            Disconnects the <see cref="T:Narumikazuchi.Networking.IClient`1"/> with the specified <see cref="T:System.Guid"/> from the <see cref="T:Narumikazuchi.Networking.IServer`1"/> instance.
+            </summary>
+            <param name="client">The client to disconnect.</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException"/>
+        </member>
+        <member name="P:Narumikazuchi.Networking.Sockets.ServerDataProcessor`1.Server">
+            <summary>
+            Gets or sets the <see cref="T:Narumikazuchi.Networking.IServer`1"/> associated with this processor.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="T:Narumikazuchi.Networking.Sockets.ServerDataProcessor">
+            <summary>
+            Provides the blueprint for data processing of an <see cref="T:Narumikazuchi.Networking.IServer`1"/>.
+            </summary>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ServerDataProcessor.#ctor(Narumikazuchi.Networking.IServer{System.Byte[]})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Narumikazuchi.Networking.Sockets.ServerDataProcessor"/> class.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ServerDataProcessor.ProcessReceivedData(System.Byte[],System.Guid@)">
+            <inheritdoc/>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+        <member name="M:Narumikazuchi.Networking.Sockets.ServerDataProcessor.DisconnectClient(System.Guid@)">
+            <summary>
+            Disconnects the <see cref="T:Narumikazuchi.Networking.IClient`1"/> with the specified <see cref="T:System.Guid"/> from the <see cref="P:Narumikazuchi.Networking.Sockets.ServerDataProcessor.Server"/> instance.
+            </summary>
+            <param name="client">The client to disconnect.</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException"/>
+        </member>
+        <member name="P:Narumikazuchi.Networking.Sockets.ServerDataProcessor.Server">
+            <summary>
+            Gets or sets the <see cref="T:Narumikazuchi.Networking.IServer`1"/> associated with this processor.
+            </summary>
+            <exception cref="T:System.ArgumentNullException"/>
+        </member>
+    </members>
+</doc>
